@@ -31,7 +31,7 @@
 
 <h1>Privacy Policy</h1>
 <p class="meta"><strong>Prepaid User</strong> (Android app, package <code>com.graydentech.prepaiduserelectricity</code>)<br>
-Effective date: 10 June 2026</p>
+Effective date: 22 September 2026 (previous version: 10 June 2026)</p>
 
 <p>Prepaid User helps you track your prepaid electricity meter balance, log purchases,
 and analyze your usage. This policy explains what information the app handles and how.</p>
@@ -42,6 +42,8 @@ and analyze your usage. This policy explains what information the app handles an
   <li>We (the developer) <strong>never receive, see, or store your data</strong> on any server.</li>
   <li>Optional backups go to <strong>your own Google Drive</strong>, protected by your Google account.</li>
   <li>The app shows ads via Google AdMob, which may use device identifiers as described below.</li>
+  <li>The app reports <strong>anonymous usage statistics and crash reports</strong> to Google
+  Firebase so we can find and fix faults. These never include your meter readings.</li>
 </ul>
 
 <h2>Data stored on your device</h2>
@@ -83,19 +85,45 @@ delete your advertising ID in your device settings.</p>
 
 <h2>Permissions the app uses</h2>
 <ul>
-  <li><strong>Internet / network state</strong> — to load ads and to upload/download your
-  Google Drive backup when you request it.</li>
+  <li><strong>Internet / network state</strong> — to load ads, to send usage statistics and
+  crash reports, and to upload/download your Google Drive backup when you request it.</li>
   <li><strong>Notifications</strong> — to show the optional daily reminder to record your
   meter reading. You can disable this in the app or in system settings.</li>
   <li><strong>Run at startup</strong> — only to re-schedule your daily reminder after the
   device reboots.</li>
 </ul>
 
+<h2>Usage statistics and crash reports</h2>
+<p>The app uses <strong>Google Analytics for Firebase</strong> and
+<strong>Firebase Crashlytics</strong> to tell us how the app is performing and when it
+breaks. These report:</p>
+<ul>
+  <li><strong>App activity</strong> — which screens are opened and how often the app is
+  used, plus the app version, so we can see which features matter and which are ignored.</li>
+  <li><strong>Crashes, freezes and errors</strong> — the technical details of a fault
+  (where in the code it happened, the device model, the Android version and the app version),
+  so we can reproduce and fix it.</li>
+  <li><strong>Device and general location</strong> — device model, language, and the country
+  or region derived from your IP address. Not a precise location; the app has no location
+  permission.</li>
+  <li><strong>An app instance identifier</strong> — a random ID for this installation of the
+  app, so repeat sessions can be counted. It is reset if you clear the app's data or
+  reinstall.</li>
+</ul>
+<p><strong>What is never reported:</strong> your meter readings, your purchases, the amounts
+you paid, your currency or cost-per-unit settings, your Drive backups, or anything that
+identifies you personally. We cannot see your data and we do not receive a copy of it.</p>
+<p>Firebase processes this on Google's infrastructure; see the
+<a href="https://firebase.google.com/support/privacy">Firebase privacy and security
+information</a> and the <a href="https://policies.google.com/privacy">Google Privacy
+Policy</a>.</p>
+
 <h2>Data we collect</h2>
-<p>None. The app has no user accounts, no analytics SDK operated by us, and no servers.
-We cannot identify you and we do not sell or share any personal information. The only
-third party processing data in the app is Google (AdMob ads and, if you use it,
-your own Google Drive for backups).</p>
+<p>Beyond the usage statistics, crash reports and advertising data described above,
+nothing. The app has no user accounts and no servers of our own. We cannot identify you
+and we do not sell or share any personal information. The only third party processing data
+in the app is Google (Firebase, AdMob ads and, if you use it, your own Google Drive for
+backups).</p>
 
 <h2>Children</h2>
 <p>The app is a utility for managing household electricity and is not directed at children
@@ -107,6 +135,8 @@ under 13. It does not knowingly collect personal information from children.</p>
   or simply uninstall it.</li>
   <li>Drive backup: remove it via Google Drive settings &gt; Manage apps, or revoke access at
   <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+  <li>Usage statistics and crash reports: email us at the address below and we will delete
+  the records held for your app instance.</li>
 </ul>
 
 <h2>Changes to this policy</h2>
